@@ -7,3 +7,98 @@
 body {
     font-family: sans-serif;
 }
+
+/* navbar */
+header {
+    background-color: #b4d0e7;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 45px;
+    width: 100%;
+
+    background-color: white;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+}
+
+.links ul {
+    display: flex;
+    list-style-type: none;
+}
+/* fine navbar */
+
+
+
+/* Header */
+
+#titolo {
+    width: 1200px;
+    height: 740px;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contenitore {
+    display: flex;
+    justify-content: center;
+}
+
+.testo {
+    width: 30%;
+}
+
+.immagine {
+    flex-grow: 1;
+}
+/* Fine header  */
+
+
+
+/* Main */
+
+main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fine main  */
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    height: 570px;
+
+    background-color: black;
+    color: white;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* Fine footer */
