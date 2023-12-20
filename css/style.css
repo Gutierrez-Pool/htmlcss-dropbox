@@ -12,7 +12,7 @@ body {
 /* Elementi comuni */
 
 .container-big {
-    width: 1200px;
+    max-width: 1200px;
 
     margin-left: auto;
     margin-right: auto;
@@ -34,6 +34,11 @@ body {
 
     background-color: #0061ff;
     color: white;
+}
+
+.links ul {
+    display: flex;
+    list-style-type: none;
 }
 /* Fine Elementi comuni */
 
@@ -66,9 +71,9 @@ nav a {
     color: black;
 }
 
-.links ul {
-    display: flex;
-    list-style-type: none;
+nav .links ul {
+    /* display: flex;
+    list-style-type: none; */
     gap: 40px;
 }
 /* fine navbar */
@@ -161,8 +166,15 @@ h2 {
 
 .plan-bottom {
     display: flex;
+    justify-content: space-between;
 
+    gap: 20px;
     padding: 30px;
+}
+
+.plan-bottom .plan-bottom-left {
+    width: 60%;
+    padding-bottom: 20px;
 }
 /* Fine business plan  */
 
@@ -189,32 +201,161 @@ h2 {
 #contatto img {
     width: 100%;
 }
-
 /* Fine entra in contatto */
+
+
+
+/* Piu operazioni */
+
+#more-operations {
+    padding-bottom: 200px;
+}
+
+#more-operations .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#more-operations .row .col {
+    width: calc(100% / 3 - 50px / 3 * 2);
+}
+
+#more-operations .row img {
+    width: 100%;
+}
+/* Fine piu operazioni */
+
+
+
+/* piu di 500 team */
+#more-500 {
+    padding-bottom: 150px;
+
+    width: 55%;
+}
+/* Fine piu di 500 team */
+
+
+
+/* Quadrati */
+
+#squares {
+    display: flex;
+}
+
+#squares .square-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* width: calc(100vw / 3); */
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 50%;
+
+    background-color: #61082b;
+}
+
+.uni-logo {
+    filter: invert(100%) sepia(5%) saturate(807%) hue-rotate(242deg) brightness(113%) contrast(100%);
+}
+
+.square img {
+    padding: 95px 80px;
+
+    max-width: 120%;
+    max-height: 120%;
+}
+
+#squares .testo {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    gap: 55px;
+}
+
+#squares .testo img {
+    padding-bottom: 35px;
+    width: 50%;
+}
+/* Fine quadrati */
+
+
+
+/* Porta dropbox */
+
+#carry-drop {
+    background-color: #b4d0e7;
+
+}
+
+#carry-drop .container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 135px 0 75px;
+}
+
+#carry-drop h2 {
+    width: 60%;
+}
+/* Fine porta dropbox */
+
+
+
+/* Faq  */
+
+#faq {
+    padding: 160px 0 145px;
+}
+
+#faq div {
+    padding-block: 40px;
+    border-bottom: lightslategray 1px solid;
+}
+
+/* Fine faq  */
 
 
 
 /* Footer */
 
 footer {
-    display: flex;
-    flex-direction: column;
-
-    height: 570px;
-
     background-color: black;
     color: white;
 }
 
+
 .footer-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding-block: 110px;
 }
 
-footer ul {
-    display: flex;
+.footer-top h3 {
+    padding-bottom: 30px;
+}
+
+.footer-top ul {
     flex-direction: column;
-    list-style-type: none;
+    gap: 15px;
 }
 
+
+.footer-bottom {
+    display: inline-block;
+    
+    padding-block: 45px;
+    padding-right: 25px;
+    
+    border-top: lightslategray 1px solid;
+}
 /* Fine footer */
