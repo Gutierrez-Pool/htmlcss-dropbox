@@ -19,15 +19,18 @@ body {
 }
 
 .container {
+    max-width: 1000px;
 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
     display: inline-block;
 
-    padding: 10px 17px;
+    text-align: center;
 
-    text-decoration: none;
+    padding: 10px 17px;
 
     background-color: #0061ff;
     color: white;
@@ -119,15 +122,75 @@ header .text .fa-solid {
 
 
 
-/* Main */
+/* business plan */
+h2 {
+    font-size: 30px;
 
-main {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 60px;
+}
+#business-plans {
+    margin-bottom: 150px;
 }
 
-/* Fine main  */
+#business-plans .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#business-plans .plan {
+    border: dashed 1px red;
+    min-height: 400px;
+    /* test */
+    
+    display: flex;
+    flex-direction: column;
+
+    padding-inline: 30px;
+    gap: 20px;
+
+    width: calc(100% / 3 - 50px / 3 * 2);
+}
+
+.user {
+    text-align: center;
+
+    padding: 12px;
+
+    border-bottom: lightslategrey 1px solid;
+}
+
+.plan-bottom {
+    display: flex;
+
+    padding: 30px;
+}
+/* Fine business plan  */
+
+
+
+/* Entra in contatto */
+
+#contatto {
+    display: flex;
+
+    gap: 50px;
+
+    margin-bottom: 150px;
+}
+
+#contatto .image {
+    width: 65%;
+}
+
+#contatto .text {
+    width: 35%;
+}
+
+#contatto img {
+    width: 100%;
+}
+
+/* Fine entra in contatto */
 
 
 
