@@ -70,11 +70,6 @@ body {
 
 /* test  */
 
-/* a:hover {
-    text-decoration: underline;
-
-} */
-
 .links ul a:hover {
     text-decoration: underline;
 }
@@ -493,7 +488,10 @@ h3 {
     display: flex;
     justify-content: space-between;
 
-    padding-block: 40px;
+    /* width: 100%; */
+
+    padding: 40px;
+    /* margin-top: 40px; */
 
     border-bottom: lightslategray 1px solid;
 }
@@ -505,6 +503,34 @@ h3 {
 /* Fine faq  */
 
 
+
+/* BONUS */
+
+.answer {
+    width: 1000px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.question .testo {
+    position: relative;
+
+    top: -45px;
+
+    transition: top 1s;
+}
+
+.answer:hover .testo {
+    top: 60px;
+  
+    transition: 2s;
+}
+
+.answer:hover {
+    height: 100px;
+
+    transition: 2s;
+}
 
 /* Footer */
 
