@@ -67,14 +67,9 @@ body {
     transition: 0.5s;
 }
 
-
-/* test  */
-
 .links ul a:hover {
     text-decoration: underline;
 }
-/* fine test */
-
 
 .links ul {
     display: flex;
@@ -290,7 +285,6 @@ main .container .billing {
     white-space: nowrap;
 }
 
-/* DA SISTEMARE */
 #business-plans .column {
     display: flex;
     flex-direction: column;
@@ -308,8 +302,6 @@ main .container .billing {
 .plan-bottom .plan-bottom-left {
     width: 72%;
 }
-
-/* DA SISTEMARE */
 
 h3 {
     padding-bottom: 20px;
@@ -456,7 +448,6 @@ h3 {
 
 #carry-drop {
     background-color: #b4d0e7;
-
 }
 
 #carry-drop .container {
@@ -481,7 +472,9 @@ h3 {
 /* Faq  */
 
 #faq {
-    padding: 160px 0 145px;
+    /* padding: 160px 0 145px; */
+    padding-top: 160px;
+    height: 100vh;
 }
 
 #faq .question {
@@ -491,46 +484,29 @@ h3 {
     /* width: 100%; */
 
     padding: 40px;
-    /* margin-top: 40px; */
-
-    border-bottom: lightslategray 1px solid;
 }
 
 #faq .question .fa {
     padding-inline: 40px;
 }
 
+/* Bonus */
+#faq .testo {
+    padding: 30px;
+    display: none;
+ }
+
+ #faq .question:hover + .testo {
+    display: block;
+ }
+
+ #faq .question:hover .fa {
+    transform: rotate(180deg);
+ }
+ /* Bonus */
 /* Fine faq  */
 
 
-
-/* BONUS */
-
-.answer {
-    width: 1000px;
-    height: 100%;
-    overflow: hidden;
-}
-
-.question .testo {
-    position: relative;
-
-    top: -45px;
-
-    transition: top 1s;
-}
-
-.answer:hover .testo {
-    top: 60px;
-  
-    transition: 2s;
-}
-
-.answer:hover {
-    height: 100px;
-
-    transition: 2s;
-}
 
 /* Footer */
 
