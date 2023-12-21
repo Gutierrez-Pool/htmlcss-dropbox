@@ -27,13 +27,36 @@ body {
 
 .btn {
     display: inline-block;
+    text-align: center;
+
+    padding: 10px 17px;
+
+    text-decoration: none;
+    background-color: #0061ff;
+    color: white;
+}
+
+/* test  */
+.btn:hover {
+    background-color: #0093ce;
+    /* transition: 1s; */
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+/* fine test */
+
+.btn-white {
+    display: inline-block;
 
     text-align: center;
 
     padding: 10px 17px;
 
-    background-color: #0061ff;
-    color: white;
+    border: black 1px solid;
+    background-color: white;
 }
 
 .links ul {
@@ -66,7 +89,7 @@ nav {
     gap: 40px;
 }
 
-nav a {
+nav .links a {
     text-decoration: none;
     color: black;
 }
@@ -89,7 +112,7 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 5em;
     margin-bottom: 60px;
 }
 
@@ -129,10 +152,18 @@ header .text .fa-solid {
 
 /* business plan */
 h2 {
-    font-size: 30px;
+    font-size: 2.5em;
 
     padding-bottom: 60px;
 }
+
+main .container .billing {
+    display: flex;
+
+    padding-bottom: 50px;
+    gap: 50px;
+}
+
 #business-plans {
     margin-bottom: 150px;
 }
@@ -140,41 +171,69 @@ h2 {
 #business-plans .row {
     display: flex;
     justify-content: space-between;
+
+    padding-bottom: 50px;
 }
 
 #business-plans .plan {
-    border: dashed 1px red;
-    min-height: 400px;
-    /* test */
-    
     display: flex;
     flex-direction: column;
-
+    
+    width: calc(100% / 3 - 50px / 3 * 2);
+    
     padding-inline: 30px;
     gap: 20px;
+    
 
-    width: calc(100% / 3 - 50px / 3 * 2);
+    border: solid 1px lightslategray;
 }
 
 .user {
     text-align: center;
 
-    padding: 12px;
+    padding-block: 12px;
 
     border-bottom: lightslategrey 1px solid;
+}
+
+.plan ul {
+
+    padding: 23px 0 38px;
+
+    list-style-image: url(../img/check-solid.svg);
+    margin-left: 20px;
+}
+
+.plan li {
+    padding-block: 12px;
+}
+
+#business-plans .column {
+    display: flex;
+    flex-direction: column;
+
+    border: solid 1px lightslategray;
 }
 
 .plan-bottom {
     display: flex;
     justify-content: space-between;
 
-    gap: 20px;
     padding: 30px;
 }
 
 .plan-bottom .plan-bottom-left {
-    width: 60%;
+    width: 72%;
+}
+
+.plan-bottom .plan-bottom-left strong {
+    display: block;
+    padding-bottom: 55px;
+}
+
+h3 {
     padding-bottom: 20px;
+    font-size: 1.4em;
 }
 /* Fine business plan  */
 
@@ -182,24 +241,28 @@ h2 {
 
 /* Entra in contatto */
 
-#contatto {
+#contact {
     display: flex;
 
     gap: 50px;
-
     margin-bottom: 150px;
 }
 
-#contatto .image {
+#contact .image {
     width: 65%;
 }
 
-#contatto .text {
+#contact img {
+    width: 100%;
+}
+
+#contact .text {
+    padding-block: 58px;
     width: 35%;
 }
 
-#contatto img {
-    width: 100%;
+#contact .text p {
+    padding-bottom: 30px;
 }
 /* Fine entra in contatto */
 
@@ -225,6 +288,10 @@ h2 {
 #more-operations .row img {
     width: 100%;
 }
+
+#more-operations .row h3 {
+    padding-bottom: 40px;
+}
 /* Fine piu operazioni */
 
 
@@ -233,7 +300,7 @@ h2 {
 #more-500 {
     padding-bottom: 150px;
 
-    width: 55%;
+    width: 65%;
 }
 /* Fine piu di 500 team */
 
@@ -252,6 +319,18 @@ h2 {
     /* width: calc(100vw / 3); */
 }
 
+#squares .testo {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    gap: 55px;
+}
+
+#squares .testo img {
+    padding-bottom: 35px;
+    width: 50%;
+}
+
 .square {
     display: flex;
     justify-content: center;
@@ -259,8 +338,6 @@ h2 {
 
     width: 50%;
     height: 50%;
-
-    background-color: #61082b;
 }
 
 .uni-logo {
@@ -274,17 +351,35 @@ h2 {
     max-height: 120%;
 }
 
-#squares .testo {
-    display: flex;
-    flex-direction: column;
-    padding: 45px;
-    gap: 55px;
+#squares .verde {
+    background-color: #a2d39b;
+    border: #d1e9cd 15px solid;
 }
 
-#squares .testo img {
-    padding-bottom: 35px;
-    width: 50%;
+#squares .bordeaux {
+    background-color: #61082b;
 }
+
+#squares .azzuro {
+    background-color: #0093ce;
+}
+
+#squares .rosso {
+    background-color: #ff1c1c;
+}
+
+#squares .grey {
+    background-color: #b4d0e7;
+}
+
+#squares .blu {
+    background-color: #0d2481;
+}
+
+#squares .giallo {
+    background-color: #ffd830;
+}
+
 /* Fine quadrati */
 
 
@@ -305,6 +400,11 @@ h2 {
 
 #carry-drop h2 {
     width: 60%;
+    color: #61072a;
+}
+
+#carry-drop .btn-white {
+    border: none;
 }
 /* Fine porta dropbox */
 
@@ -316,9 +416,17 @@ h2 {
     padding: 160px 0 145px;
 }
 
-#faq div {
+#faq .question {
+    display: flex;
+    justify-content: space-between;
+
     padding-block: 40px;
+
     border-bottom: lightslategray 1px solid;
+}
+
+#faq .question .fa {
+    padding-inline: 40px;
 }
 
 /* Fine faq  */
