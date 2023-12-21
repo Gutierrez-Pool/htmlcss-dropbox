@@ -36,28 +36,50 @@ body {
     color: white;
 }
 
-/* test  */
-.btn:hover {
-    background-color: #0093ce;
-    /* transition: 1s; */
-}
-
-a:hover {
-    text-decoration: underline;
-
-}
-/* fine test */
-
 .btn-white {
     display: inline-block;
-
     text-align: center;
 
     padding: 10px 17px;
 
-    border: black 1px solid;
+    text-decoration: none;
     background-color: white;
+    color: black;
+    border: black 1px solid;
 }
+
+.btn:hover {
+    background-color: #091d6b;
+
+    border-radius: 5px;
+    transform: scale(1.1);
+
+    transition: 0.5s;
+}
+
+.btn-white:hover {
+    background-color: #091d6b;
+    color: white;
+
+    border-radius: 5px;
+    transform: scale(1.2);
+
+    transition: 0.5s;
+}
+
+
+/* test  */
+
+/* a:hover {
+    text-decoration: underline;
+
+} */
+
+.links ul a:hover {
+    text-decoration: underline;
+}
+/* fine test */
+
 
 .links ul {
     display: flex;
@@ -176,16 +198,11 @@ main .container .billing {
 }
 
 #business-plans .plan {
-    display: flex;
-    flex-direction: column;
-    
-    width: calc(100% / 3 - 50px / 3 * 2);
-    
-    padding-inline: 30px;
-    gap: 20px;
-    
+    border: solid 1px #dcdcdd;
+}
 
-    border: solid 1px lightslategray;
+#business-plans .row .plan {
+    width: calc(100% / 3 - 50px / 3 * 2);
 }
 
 .user {
@@ -193,12 +210,68 @@ main .container .billing {
 
     padding-block: 12px;
 
-    border-bottom: lightslategrey 1px solid;
+    border-bottom: #dcdcdd 1px solid;
+}
+
+#business-plans .plan .plan-body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 38px 30px;
+}
+
+#business-plans .plan .pricing {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 55px;
+}
+
+#business-plans .plan .pricing strong {
+    margin-bottom: 1em;
+}
+
+#business-plans .plan .pricing span {
+    color: gray;
+}
+
+#business-plans .plan .features {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    margin-bottom: 55px;
+}
+
+#business-plans .plan .features-row {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 5px;
+}
+
+#business-plans .plan .features-row .fa {
+    padding-top: 4px;
+}
+
+#business-plans .plan .btn {
+    margin-bottom: 35px;
+}
+
+#business-plans .plan .plan-body > p {
+    margin-bottom: 40px;
+}
+
+#business-plans .plan .plan-body > hr {
+    width: 25%;
+
+    margin-bottom: 55px;
 }
 
 .plan ul {
 
-    padding: 23px 0 38px;
+    padding: 23px 0 8px;
 
     list-style-image: url(../img/check-solid.svg);
     margin-left: 20px;
@@ -208,6 +281,21 @@ main .container .billing {
     padding-block: 12px;
 }
 
+#business-plans .plan.team-plan .plan-body {
+    flex-direction: row;
+    gap: 65px;
+}
+
+#business-plans .plan.team-plan strong {
+    display: block;
+    padding-bottom: 55px;
+}
+
+#business-plans .plan.team-plan .btn {
+    white-space: nowrap;
+}
+
+/* DA SISTEMARE */
 #business-plans .column {
     display: flex;
     flex-direction: column;
@@ -226,10 +314,7 @@ main .container .billing {
     width: 72%;
 }
 
-.plan-bottom .plan-bottom-left strong {
-    display: block;
-    padding-bottom: 55px;
-}
+/* DA SISTEMARE */
 
 h3 {
     padding-bottom: 20px;
@@ -316,70 +401,58 @@ h3 {
     display: flex;
     flex-wrap: wrap;
 
-    /* width: calc(100vw / 3); */
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+#squares .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50%;
+    height: 50%;
+
+    transition: border-witdh 1s ease;
+
+    border: 0px solid rgba(255, 255, 255, 0.5);
+}
+
+#squares .square.active,
+#squares .square:hover {
+    border-width: 15px;
+}
+
+.square img {
+    padding: 80px 65px;
+    
+    max-width: 120%;
+    /* max-height: 120%; */
+    
+    filter: invert(1);
 }
 
 #squares .testo {
     display: flex;
     flex-direction: column;
+
+    height: 100%;
+
     padding: 45px;
-    gap: 55px;
+    gap: 50px;
+
+    overflow-y: auto;
+
+    background-color: #f5f5f5;
 }
 
 #squares .testo img {
-    padding-bottom: 35px;
-    width: 50%;
+    max-width: 50%;
 }
 
-.square {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 50%;
-    height: 50%;
+#squares .testo hr {
+    width: 25%;
 }
-
-.uni-logo {
-    filter: invert(100%) sepia(5%) saturate(807%) hue-rotate(242deg) brightness(113%) contrast(100%);
-}
-
-.square img {
-    padding: 95px 80px;
-
-    max-width: 120%;
-    max-height: 120%;
-}
-
-#squares .verde {
-    background-color: #a2d39b;
-    border: #d1e9cd 15px solid;
-}
-
-#squares .bordeaux {
-    background-color: #61082b;
-}
-
-#squares .azzuro {
-    background-color: #0093ce;
-}
-
-#squares .rosso {
-    background-color: #ff1c1c;
-}
-
-#squares .grey {
-    background-color: #b4d0e7;
-}
-
-#squares .blu {
-    background-color: #0d2481;
-}
-
-#squares .giallo {
-    background-color: #ffd830;
-}
-
 /* Fine quadrati */
 
 
@@ -457,6 +530,10 @@ footer {
     gap: 15px;
 }
 
+.footer-top ul a {
+    text-decoration: none;
+    color: white;
+}
 
 .footer-bottom {
     display: inline-block;
